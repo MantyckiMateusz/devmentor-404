@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html, body{
+    height: 100vh;
+    padding: 0;
+    width: 100vw;
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+}
+
+.not-found{
+    position: absolute;
+    font-family: "Inconsolata", sans-serif;
+    font-size: 1.5rem;
+    left: 1.5rem;
+    top: 1.25rem;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: hsla(0, 0%, 20%, 1);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1.5rem
+}
+
+
+.container img{
+    max-width: 286px;
+    max-height: 238px;
+    margin: 6.8rem 2.75rem 3.75rem;
+}
+
+.content{
+    max-width: 100%;
+
+}
+
+.content h1{
+    font-family: "Space Mono", sans-serif;
+    font-weight: 700;
+    font-size: 2.75rem;
+    margin-top: 0;
+    margin-bottom: 1.8rem;
+    color: hsla(0, 0%, 20%, 1);
+    line-height: 4.4rem;   
+}
+
+.content p{
+    font-family: "Space Mono", sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.66rem;
+    margin: 0 1.5rem 4.125rem 0;
+    letter-spacing: -0.035rem;
+    color: #4F4F4F;
+}
+
+.btn{
+    font-family: "Space Mono", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    padding: 1.1rem 2.35rem;
+    max-width: 13.5rem;
+    max-height: 4.25rem;
+    color: #FFF;
+    background-color: #333333;
+    border: none;
+}
+
+.btn:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.footer{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer p, a{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 0.875;
+    color:#BDBDBD;
+    margin-bottom: 1.5rem;
+}
+
+.footer p a{
+    text-decoration: underline;
+}
+
+.footer a:active{
+    color:#BDBDBD;
+}
+
+
+@media screen and (min-width: 1440px) {
+    body{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    .not-found{
+        position: absolute;
+        font-family: "Inconsolata", sans-serif;
+        font-size: 1.5rem;
+        left: 4.8rem;
+        top: 2.5rem;
+        white-space: nowrap;
+        text-transform: uppercase;
+        color: hsla(0, 0%, 20%, 1);
+    }
+
+    .container{
+        flex-direction: row;
+        transform: translateY(-100px);
+        max-width: 85%;
+    }
+
+    .container img{
+        max-width: 540px;
+        max-height: 450px;
+    }
+
+    .container h1{
+        font-size: 4rem;
+        line-height: 5.8rem;
+        margin-bottom: 2.25rem;
+    }
+
+    .container p{
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+        margin: 0 0 4rem;
+        max-width: 65%;
+    }
+}
